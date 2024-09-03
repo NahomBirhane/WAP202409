@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Combinator</title>
+    <style>
+        div  span { /* any children(can be son, greatson, great great son...) under div*/
+            color: red;
+        }
+
+        div > span { /* direct children(only son) under div*/
+            color: red;
+        }
+
+        .container .shout{
+            color: pink;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>This is <span class="intro">P</span>...</p>
+        <span class="shouts">This is a span!!</span>
+        <div>
+            <p class="intro">This is another P...</p>
+        </div>
+    </div>
+</body>
+</html>

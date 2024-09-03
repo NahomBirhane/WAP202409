@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Combinator</title>
+    <style>
+        p.intro  .special {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>This is 
+            <span class="intro">A</span> 
+            <a class="intro" href="#">C</a>
+            <span class="special">F</span>
+        </p>
+        <div>
+            <p class="intro">B <span class="special">MMMM</span></p>
+        </div>
+        <div class="intro">D
+            <p class="intro special shouts">E</p>
+        </div>
+    </div>
+</body>
+</html>
