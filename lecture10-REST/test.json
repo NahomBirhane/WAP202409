@@ -1,0 +1,13 @@
+{
+    "firstname": "John",
+    "lastname": "Smith",
+    "age": 20,
+    "isAdmin": true,
+    "grades": [99, 89, 77, "A", "A+"],
+    "address": {
+        "street": "1000 N 4th ST",
+        "city": "Fairfield",
+        "state": "IA"
+    },
+    "certificate": null
+}
