@@ -1,4 +1,4 @@
-// import { nanoid } from 'nanoid';
+import { v4 as uuidv4 } from 'uuid';
 
 let products: Product[] = [];
 
@@ -8,7 +8,8 @@ export default class Product {
     }
 
     save(){
-        this.id = new String(Math.random()).toString();
+        // this.id = new String(Math.random()).toString();
+        this.id = uuidv4();
         products.push(this);
         return this;
     }
