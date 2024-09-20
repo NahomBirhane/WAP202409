@@ -1,0 +1,13 @@
+PUT http://localhost:3000/products/111111/ratings
+Content-Type: application/json
+
+{
+    "userid": "u6666",
+    "rating": 4.9
+}
+
+###
+GET http://localhost:3000/products/1006/getAverageRatings
+
+###
+GET http://localhost:3000/products/ratings?userid=u000888
